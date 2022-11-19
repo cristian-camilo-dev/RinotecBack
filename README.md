@@ -1,4 +1,4 @@
-![rinotec](file:///C:/Users/windows/Desktop/RinotecBack.png "rinotec")
+[![rinotec](https://i.ibb.co/SVx1mxH/Rinotec-Back.png "rinotec")](https://i.ibb.co/SVx1mxH/Rinotec-Back.png "rinotec")
 
 # Rinotec
 
