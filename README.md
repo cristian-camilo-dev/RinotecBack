@@ -9,6 +9,8 @@ Rinotec microempresa dedicada a la venta y distribución de accesorios para smar
 - Clonar el repositorio
 - Instalar dependencias con `npm install`
 - Instalar extensiones de VSCode EditorConfig for VS Code
+- Este proyecto usa ES MODULES, por lo que se debe correr con NodeJS  13.2.0 o superior
+
 
 # Tecnologías
 

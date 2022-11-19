@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Rinotec microempresa dedicada a la venta y distribución de accesorios para smartphones y pc’s, con sede en la ciudad de Barranquilla, su método de ventas principal radica en la plataforma de WhatsApp en su apartado de Estados y catálogo de WhatsApp Business.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
@@ -17,5 +18,8 @@
     "eslint-plugin-prettier": "^4.2.1",
     "nodemon": "^2.0.20",
     "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
