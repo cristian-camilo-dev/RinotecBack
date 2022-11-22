@@ -10,26 +10,22 @@ router.get('/', (req, res) => {
   res.json(products);
 });
 
-/* This is a route handler for the GET /products/:id endpoint. It generates a single product and
-returns it as JSON. */
+
 router.get('/:id', (req, res) => {
   const { id } = req.params;
   const product = services.findOne(id);
   res.json(product);
 });
 
-/* This is a route handler for the POST /products endpoint. It receives a product from the request*/
+
 
 router.post('/', (req, res) => {
   const body = req.body;
-  res.json({
-    message: 'Product created',
-    product: body,
-  });
+  const newProduct = services.create(body);
+  res.status(201).json(newProduct);
 });
 
-/* A route handler for the PATCH /products/:id endpoint. It receives a product from the request and
-returns a message and the product. */
+
 router.patch('/:id', (req, res) => {
   const { id } = req.params;
   const body = req.body;

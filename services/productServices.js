@@ -18,8 +18,14 @@ class ProductsService {
     }
   }
 
-  create() {
+  create(data) {
     // create product
+    const newProduct = {
+      id: faker.datatype.uuid(),
+      ...data,
+    }
+    this.products.push(newProduct);
+    return newProduct;
   }
 
   find() {
@@ -34,6 +40,8 @@ class ProductsService {
 
   update() {
     // update product
+
+
   }
 
   delete() {
