@@ -23,7 +23,7 @@ class ProductsService {
     const newProduct = {
       id: faker.datatype.uuid(),
       ...data,
-    }
+    };
     this.products.push(newProduct);
     return newProduct;
   }
@@ -38,14 +38,24 @@ class ProductsService {
     return this.products.find((item) => item.id === id);
   }
 
-  update() {
+  update(id, data) {
     // update product
-
-
+    const index = this.products.findIndex((item) => item.id === id);
+    if (index === -1) {
+      throw new Error('Product not found');
+    }
+    this.products[index] = data;
+    return this.products[index];
   }
 
-  delete() {
+  delete(id) {
     // delete product
+    const index = this.products.findIndex((item) => item.id === id);
+    if (index === -1) {
+      throw new Error('Product not found');
+    }
+    this.products.splice(index, 1);
+    return { id };
   }
 }
 
