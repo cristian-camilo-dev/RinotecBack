@@ -2,34 +2,34 @@
 
 # Rinotec
 
-Rinotec microempresa dedicada a la venta y distribución de accesorios para smartphones y pc’s, con sede en la ciudad de Barranquilla, su método de ventas principal radica en la plataforma de WhatsApp en su apartado de Estados y catálogo de WhatsApp Business.
-
-# Instalación
-
-- Clonar el repositorio
-- Instalar dependencias con `npm install`
-- Instalar extensiones de VSCode EditorConfig for VS Code
-- Este proyecto usa ES MODULES, por lo que se debe correr con NodeJS  13.2.0 o superior
+Rinotec microcompany dedicated to the sale and distribution of accessories for smartphones and pc's, based in the city of Barranquilla, its main sales method lies in the WhatsApp platform in its States section and WhatsApp Business catalog. 📱💻
 
 
-# Tecnologías
+# installation
 
-- node.js
-- express
+- Clone the repository 📃📃
+- Installing dependencies with `npm install` ⏬📦
+- Install VSCode EditorConfig for VS Code extensions ⚙️​⚙️​
+- This project uses ES MODULES, so it must be run with NodeJS 13.2.0 or higher. 🗂️​
+
+# technologies used
+
+- node.js 
+
 
 # "scripts"
 
 - "server" : "nodemon index.js"
 - "start": "node index.js",
 
-# Dependencias
+# Dependencies
 
-- Express
+- Express 📦
 
-# Dependencias Dev
+# Dependencies Dev
 
-- nodemon
-- eslint
-- prettier
-- eslint-config-prettier
-- eslint-plugin-prettier
+- nodemon 📦
+- eslint 📦
+- prettier  📦
+- eslint-config-prettier  📦
+- eslint-plugin-prettier  📦
