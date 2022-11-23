@@ -29,20 +29,15 @@ router.post('/', (req, res) => {
 router.patch('/:id', (req, res) => {
   const { id } = req.params;
   const body = req.body;
-  res.json({
-    message: 'Product updated',
-    product: body,
-    id,
-  });
+  const product = services.update(id, body);
+  res.json(product);
 });
 
-// A route handler for the DELETE /products/:id endpoint. It returns a message and the id of the deleted product.
+
 router.delete('/:id', (req, res) => {
   const { id } = req.params;
-  res.json({
-    message: 'Product deleted',
-    id,
-  });
+  const product = services.delete(id);
+  res.json(product);
 });
 
 export default router;
